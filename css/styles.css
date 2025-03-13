@@ -1,0 +1,205 @@
+:root {
+    --color-primary: black;
+    --color-secondary: #f0c807;
+}
+
+@font-face {
+    font-family: Roadstore;
+    src: url("/fonts/ROADSTORE\ Dafont.ttf")
+      format("truetype");
+  }
+
+html {
+    background-color: black;
+    background-image: url("/img/logo-white.png");
+    background-size: 100px;
+    color: white;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+
+header {
+    height: 100px;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    box-shadow:  0px 0px 2rem hsl(50, 94%, 48%, 0.5);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-family: Roadstore;
+    font: 300 1.5rem Roadstore;
+}
+
+header img {
+    height: 100%;
+}
+
+.inicio {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio h2 {
+    font-size: 2.5rem;
+    font-family: Roadstore;
+    letter-spacing: 0.5rem;
+    color: var(--color-secondary);
+}
+
+.inicio p {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero {
+    display: none;
+    height: 400px;
+    width: 800px;
+    border-radius: 1rem;
+    border: 1px solid var(--color-secondary);
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.redes-sociales a {
+    background-color: #f0c807;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.redes-sociales a img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.menu h1 {
+    margin: 0;
+    font: 2rem Roadstore;
+    color: var(--color-secondary);
+}
+
+.menu p {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contenedor-items {
+    margin: 2rem;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: var(--color-secondary);
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.item h3 {
+    font: 1.5rem Roadstore;
+    color: var(--color-primary);
+    justify-self: flex-end;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 2rem hsl(50, 94%, 48%, 0.5);
+    scale: 1.02;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    font: 300 1rem arial;
+    color: black;
+    box-shadow: 0px 0px 2rem hsl(50, 94%, 48%, 0.5);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 1rem 0 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .inicio p {
+        text-align: left;
+    }
+}
